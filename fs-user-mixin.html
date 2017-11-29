@@ -41,11 +41,11 @@
     }
     
     _loadUser() {
-      const request = new FSRequest();
+      const request = document.createElement('fs-request');
       request.url = `/platform/users/current`;
       request.requireAuthentication = true;
       request.addEventListener('response', this._handleUserResponse.bind(this));
-      request.ready();
+      request.delegateEvents(this);
       request.generateRequest();
     }
     
