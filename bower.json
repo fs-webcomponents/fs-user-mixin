@@ -1,7 +1,7 @@
 {
   "name": "fs-user-mixin",
   "main": "fs-user-mixin.html",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
     "fs-request": "fs-webcomponents/fs-request#^4.2.4",
