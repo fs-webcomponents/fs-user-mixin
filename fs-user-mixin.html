@@ -44,6 +44,7 @@
       const request = document.createElement('fs-request');
       request.url = `/platform/users/current`;
       request.requireAuthentication = true;
+      request.clientName = this.clientName;
       request.addEventListener('response', this._handleUserResponse.bind(this));
       request.delegateEvents(this);
       request.generateRequest();
